@@ -1,0 +1,29 @@
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: white;
+  height: 100%;
+}
+
+body.light {
+  background-image: url("./assets/image.jpeg");
+}
+
+body.dark {
+  background-image: url("./assets/darkbackround.jpeg");
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  body {
+    background-image: url("./assets/image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-position: center;
+    height: 100%;
+  }
+}

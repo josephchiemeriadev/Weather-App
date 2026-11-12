@@ -1,0 +1,570 @@
+.forecast-main {
+  background: transparent;
+}
+
+.forecast-header {
+  position: fixed;
+  background: navy;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.forecast-top {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  gap: 10px;
+}
+
+.forecast-logos {
+  display: flex;
+  align-items: center;
+}
+
+.forecast-logo-image {
+  width: 60px;
+  height: auto;
+}
+
+.forecast-logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.forecast-logo span {
+  color: blue;
+}
+
+.forecast-input-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 810px;
+  position: relative;
+}
+
+.forecast-input {
+  height: 29px;
+  border-radius: 8px;
+  border: none;
+  background-color: #3d5a85;
+  width: 60%;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 0 40px 0 15px;
+  color: white;
+  font-size: 17px;
+}
+
+.forecast-search-icon {
+  visibility: hidden;
+}
+
+.forecast-arrow-icon {
+  visibility: hidden;
+}
+
+.forecast-clear-icon {
+  position: absolute;
+  right: 20%;
+  transform: translateX(-100%);
+  font-size: 14px;
+  background: gray;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.forecast-home-icon {
+  display: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  border-bottom: 2px solid skyblue;
+}
+
+a:hover {
+  color: gray;
+}
+
+.sun-icon {
+  width: 30px;
+  height: auto;
+  padding-left: 10px;
+  color: blue;
+  background: none;
+}
+
+.forecast-main-pages {
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.place {
+  margin-bottom: 20px;
+}
+
+.place h3,
+p {
+  margin: 0;
+}
+
+.place h3 {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.forecast-forecasts {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.forecast-daily-forecast {
+  background: rgba(30, 58, 95, 0.55);
+  border-radius: 10px;
+  padding: 10px 0 5px 0;
+}
+
+.forecast-daily-forecast h3 {
+  margin-bottom: 30px;
+}
+
+.forecast-daily-forecast h3 {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.forecast-dailys-box {
+  padding: 10px;
+}
+
+.forecast-daily-box {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50px 60px 120px 1fr;
+  background: rgba(37, 76, 122, 0.6);
+  margin-bottom: 3px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.forecast-hourly-forecast {
+  background: rgba(30, 58, 95, 0.55);
+  border-radius: 10px;
+  padding: 10px 0 5px 0;
+  margin-bottom: 10px;
+}
+
+.forecast-hourly-forecast h3 {
+  margin: 0;
+  padding-left: 11px;
+}
+
+.forecast-hourlys-box {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 10px;
+}
+
+.forecast-hourly-box {
+  background: rgba(37, 76, 122, 0.6);
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+}
+
+.sun-moon-air-box {
+  display: flex;
+  gap: 10px;
+}
+
+.sun-moon-box {
+  background: rgba(30, 58, 95, 0.55);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.rise-line-set {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  align-items: center;
+}
+
+.line-image {
+  width: 150px;
+  transform: scale(1.5);
+}
+
+.forecast-set-image {
+  width: 45px;
+  height: auto;
+}
+
+.forecast-rise-image {
+  width: 50px;
+  height: auto;
+}
+
+.forecast-rise-box {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.forecast-set-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.forecast-set-box p {
+  white-space: nowrap;
+}
+
+.air-box {
+  background: rgba(30, 58, 95, 0.55);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.air-quality-particles {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sun-moon-air-box h3 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.big-circle {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-circle {
+  background: darkblue;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.status {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.part {
+  display: grid;
+  grid-template-columns: 65px 45px 1fr;
+}
+
+.part p:nth-child(1) {
+  text-align: left;
+}
+
+.part p:nth-child(2) {
+  text-align: center;
+}
+
+.part p:nth-child(3) {
+  text-align: right;
+}
+
+.part p {
+  white-space: nowrap;
+  margin-bottom: 18px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.moon-box {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.moon-image {
+  width: 80px;
+}
+
+.pricipitation-box {
+  background: rgba(30, 58, 95, 0.55);
+  border-radius: 10px;
+  padding: 10px 10px 0 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.pricipitation-box h3 {
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+.pricipitation-box p {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.charts {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 160px;
+}
+
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 160px;
+}
+
+.bar {
+  width: 60px;
+  background: green;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.bar-chart p {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.dayName {
+  padding-top: 0;
+}
+
+.long-line {
+  border-bottom: 1px solid white;
+  width: 100%;
+  max-width: 620px;
+  position: absolute;
+  bottom: 22px;
+  right: 1px;
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+  .forecast-header {
+    width: 100%;
+    z-index: 700;
+  }
+
+  .forecast-top {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .forecast-logo-image {
+    width: 45px;
+  }
+
+  .forecast-logo {
+    font-size: 16px;
+  }
+
+  .forecast-top {
+    justify-content: space-between;
+    z-index: 100;
+  }
+  .forecast-input-box {
+    position: fixed;
+    background: navy;
+    width: 100%;
+    left: 0;
+    padding: 15px;
+    z-index: 200;
+    transition: transform 0.5s ease-in;
+  }
+
+  .forecast-search-icon {
+    visibility: visible;
+  }
+
+  .forecast-arrow-icon {
+    visibility: visible;
+  }
+  .forecast-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    visibility: hidden;
+  }
+  .forecast-nav {
+    position: fixed;
+    background: navy;
+    width: 250px;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    padding-top: 10px;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+  }
+  .forecast-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-top: 20px;
+  }
+
+  .forecast-home-icon {
+    display: block;
+    padding-left: 20px;
+    padding-top: 5px;
+  }
+
+  .forecast-home-icon a {
+    text-decoration: none;
+    font-size: 30px;
+    color: gold;
+  }
+
+  .forecast-menu span {
+    display: block;
+    width: 17px;
+    height: 2px;
+    margin-bottom: 3px;
+    background: white;
+    margin-left: 10px;
+  }
+
+  .forecast-main-pages {
+    padding: 90px 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .forecast-forecasts {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .added {
+    width: 100%;
+  }
+
+  .forecast-daily-forecast,
+  .join {
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+  }
+
+  .forecast-daily-box {
+    text-align: center;
+  }
+
+  .forecast-hourly-forecast {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .forecast-hourlys-box {
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  .forecast-hourly-box {
+    min-width: 55px;
+    flex: 0 0 auto;
+    padding: 6px;
+  }
+
+  .sun-moon-air-box {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .sun-moon-box,
+  .air-box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .rise-line-set {
+    justify-content: space-between;
+  }
+
+  .part {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .charts {
+    overflow-x: auto;
+    gap: 15px;
+    justify-content: space-between;
+  }
+
+  .bar-chart {
+    min-width: 45px;
+  }
+
+  .bar {
+    width: 35px;
+  }
+
+  .air-quality-particles {
+    gap: 5px;
+
+    justify-content: space-between;
+  }
+
+  .pricipitation-box {
+    margin-bottom: 30px;
+    z-index: auto;
+  }
+
+  .long-line {
+    width: calc(100% - 10px);
+    right: 5px;
+  }
+}
