@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+
+    <script>
+      const path = window.location.pathname;
+      const query = window.location.search;
+      const hash = window.location.hash;
+
+      window.location.replace(
+        "/Weather-App/" +
+          "?/" +
+          path.slice("/Weather-App/".length) +
+          query.replace("?", "&") +
+          hash,
+      );
+    </script>
+  </head>
+
+  <body></body>
+</html>
