@@ -2,15 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>weather-app</title>
+    <title>Weather App</title>
+
+    <script>
+      (function () {
+        const redirect = window.location.search;
+
+        if (redirect.startsWith("?/")) {
+          const route = redirect.slice(2).split("&")[0];
+
+          window.history.replaceState(null, "", "/Weather-App/" + route);
+        }
+      })();
+    </script>
     <script type="module" crossorigin src="/Weather-App/assets/index-BW4d3H_v.js"></script>
     <link rel="stylesheet" crossorigin href="/Weather-App/assets/index-33mT3C2C.css">
   </head>
+
   <body>
     <div id="root"></div>
   </body>
