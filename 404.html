@@ -2,22 +2,20 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Redirecting...</title>
-
+    <title>Page Not Found</title>
     <script>
-      const path = window.location.pathname;
-      const query = window.location.search;
-      const hash = window.location.hash;
+      const base = "/Weather-App/";
+
+      const redirect = window.location.pathname.replace(base, "");
 
       window.location.replace(
-        "/Weather-App/" +
+        base +
           "?/" +
-          path.slice("/Weather-App/".length) +
-          query.replace("?", "&") +
-          hash,
+          redirect +
+          window.location.search.replace("?", "&") +
+          window.location.hash,
       );
     </script>
   </head>
-
   <body></body>
 </html>
